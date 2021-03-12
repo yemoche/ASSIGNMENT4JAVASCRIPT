@@ -10,22 +10,21 @@ If the value of the third argument is ‘sum’
 Your function should return the sum of the first two arguments */
 
 
-function accessHut(number1, number2, handler){
-  let result;
-    if(handler === "multiply"){
-      result = number1 * number2
-      return result
-  } else if (handler === "divide"){
-      result = number1 / number2
-      return result;
- } else if(handler === "sum"){
-    result = number1 + number2;
-    return result;
-}else{
-  console.log('Please enter the correct input');
-}
-}
+let firstNumber = prompt("What is your number? ")
+let secondNumber = prompt ("What is your second number ?")
 
-console.log(accessHut(3,5,"sum"));
-console.log(accessHut(3,5,"multiply"));
-console.log(accessHut(3,5,"divide"));
+let calculate = prompt ("What arithemetic Operation do you want to perform? Write either 'addition', 'multiply' or 'division'")
+
+function arithmetic(calculate) {
+  if (calculate == "addition") {
+    result = firstNumber + secondNumber;
+  } else if (calculate == "multiply") {
+    result = firstNumber * secondNumber;
+  } else if (calculate == "division") {
+    result = firstNumber / secondNumber;
+  } else {
+    console.log("give a valid input!");
+  }
+  return result;
+} 
+console.log("your result is " + arithmetic(calculate));
