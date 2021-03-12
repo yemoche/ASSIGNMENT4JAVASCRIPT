@@ -12,13 +12,13 @@ Your function should return the sum of the first two arguments */
 
 function accessHut(number1, number2, handler){
   let result;
-    if(handler == "multiply"){
+    if(handler === "multiply"){
       result = number1 * number2
       return result
-  } else if (handler == "divide"){
+  } else if (handler === "divide"){
       result = number1 / number2
       return result;
- } else if(handler=="sum"){
+ } else if(handler === "sum"){
     result = number1 + number2;
     return result;
 }else{
