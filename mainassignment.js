@@ -11,20 +11,20 @@ Your function should return the sum of the first two arguments */
 
 
 let firstNumber = prompt("What is your number? ")
-let secondNumber = prompt ("What is your second number ?")
+ let secondNumber = prompt ("What is your second number ?")
 
-let calculate = prompt ("What arithemetic Operation do you want to perform? Write either 'addition', 'multiply' or 'division'")
+ let calculate = prompt ("What arithemetic Operation do you want to perform? Write either 'addition', 'multiply' or 'division'")
 
-function arithmetic(calculate) {
+ function arithmetic(calculate) {
   if (calculate == "addition") {
-    result = firstNumber + secondNumber;
+    result = Number(firstNumber) + Number(secondNumber);
   } else if (calculate == "multiply") {
     result = firstNumber * secondNumber;
-  } else if (calculate == "division") {
-    result = firstNumber / secondNumber;
-  } else {
-    console.log("give a valid input!");
+   } else if (calculate == "division") {
+     result = firstNumber / secondNumber;
+   } else {
+   console.log("give a valid input!");
   }
   return result;
-} 
+ } 
 console.log("your result is " + arithmetic(calculate));
