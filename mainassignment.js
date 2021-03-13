@@ -9,22 +9,21 @@ Your function should return the value of the first argument divided by the secon
 If the value of the third argument is ‘sum’
 Your function should return the sum of the first two arguments */
 
-
-let firstNumber = prompt("What is your number? ")
- let secondNumber = prompt ("What is your second number ?")
-
- let calculate = prompt ("What arithemetic Operation do you want to perform? Write either 'addition', 'multiply' or 'division'")
-
- function arithmetic(calculate) {
-  if (calculate == "addition") {
-    result = Number(firstNumber) + Number(secondNumber);
-  } else if (calculate == "multiply") {
-    result = firstNumber * secondNumber;
-   } else if (calculate == "division") {
-     result = firstNumber / secondNumber;
-   } else {
-   console.log("give a valid input!");
+function doSomeMathsOperation (firstNumber,secondNumber,stringValue) {
+  if (stringValue === 'multiply') {
+    let numbersMultiplication = firstNumber * secondNumber;
+    return numbersMultiplication;
   }
-  return result;
- } 
-console.log("your result is " + arithmetic(calculate));
+ 
+  if (stringValue === 'divide' ) {
+    let divisionOfNumbers  = (firstNumber / secondNumber);
+    return divisionOfNumbers;
+  } 
+  if (stringValue === 'addition' ) {
+    let additionOfNumbers = firstNumber + secondNumber;
+    return additionOfNumbers;
+  }
+}
+console.log('This action performs multiplication of two numbers (5, 6): '+ doSomeMathsOperation(5,6,'multiply')); 
+console.log('This action performs division of two numbers (5 , 6): '+ doSomeMathsOperation( 5,6,'divide')); 
+console.log('This action performs the sum of two numbers (5, 6): '+ doSomeMathsOperation(5,6,'addition')); 
