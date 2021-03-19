@@ -7,9 +7,9 @@ in your explanation of event listeners, give me all the different types of event
 
 Event listeners are divided into two, which are Bubbling and Capturing event listeners. the default settings is bubbling event listeners.
 
-* What is Bubbling event listeners? this happens when inside or child element of a parent tag event listener application is executed first. for example, in <Div> that houses a <p>, the event listener action is performed first on the p tag, before the Div tag.
+* What is Bubbling event listeners? this happens when inside or child element of a parent tag event listener application is executed first. for example, in (<Div>) that houses a (<p>), the event listener action is performed first on the p tag, before the Div tag.
 
-* What is Capturing event listeners ? this happens when  event listener on a parent tag is executed first, ahead of the child or inner element. for example, in <Div> that houses a <p>, the event listener action is performed first on the Div tag, before the p tag.
+* What is Capturing event listeners ? this happens when  event listener on a parent tag is executed first, ahead of the child or inner element. for example, in (<Div>) that houses a (<p>), the event listener action is performed first on the Div tag, before the p tag.
 
 Below are the types of event listeners, the lists are  not exhausted:
 - mouse events (MouseEvent): mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout, contextmenu
