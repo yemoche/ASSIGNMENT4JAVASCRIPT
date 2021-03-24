@@ -81,4 +81,35 @@ const cars = [
 ]
 cars.forEach((element, index, array)=>{
   console.log(element.type); // This prints out minivan & station wagon
+  });
+```
+
+```
+Another way of executing the forEach loop as taught in class
+const footBallClubs = [
+  {
+  name: 'Chelsea',
+  country: 'England',
+  manager: 'Tuchel'
+  },
+
+  {
+    name: 'Manchester United',
+    manager: 'Ole',
+    country: 'England'
+  },
+
+  {
+    name: 'Barcelona',
+    country: 'Spain',
+    manager: 'Koema'
+  }
+]
+//using forEach loop
+footBallClubs.forEach((club)=> {
+  const objectValues = Object.values(club);
+  const secondValue =  objectValues[1];
+
+  console.log(secondValue)
+});
 ```
