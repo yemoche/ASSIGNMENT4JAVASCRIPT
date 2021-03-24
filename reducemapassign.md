@@ -86,5 +86,5 @@ Another way to solve the reduce method examples is;
 }); // it returns 15 as the answer
 ```
 
-**Sources:** (spukas)[https://dev.to/spukas/higher-order-functions-in-javascript-1f4n](medium)[(https://medium.com/swlh/advanced-concepts-in-javascript-higher-order-functions-hof-ecd673a2a3f7)]
+**Sources:** [spukas](https://dev.to/spukas/higher-order-functions-in-javascript-1f4n)[medium](https://medium.com/swlh/advanced-concepts-in-javascript-higher-order-functions-hof-ecd673a2a3f7)]
 
