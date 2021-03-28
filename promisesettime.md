@@ -23,7 +23,7 @@ setTimeout(()=>{
 
 # Explain promises with examples
 
-Promise is similar inmeaning to dictionary terms of what promise is defined... this is outrightly guaaranteeing that we are going to do something in the future.
+Promise is similar in meaning to dictionary terms of what promise is defined... this is outrightly guaaranteeing that we are going to do something in the future.
 
 Promises works on three principles of accept,reject and pending states.
 
